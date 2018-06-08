@@ -1,70 +1,74 @@
-      body {
-        text-align:center;
-        background: #f5f8f9;
-        margin: 0;
-        background: #7bddcd;
-        font-family: 'Open Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Courgette');
 
-      }
-      h2 {
-        text-align: center;
-        margin-bottom: 70px;
-        margin-top: 0;
-        font-family: 'Sacramento', cursive;
-      }
-      h3 {
-        font-size: 1em;
-        margin-top: 2.5em;
-      }
-      ol li {
-        margin-top: 1em;
-      }
-      a.small {
-        font-size: .8em;
-      }
-      a.bold {
-        font-weight: bold;
-      }
-      .content {
-        background: #f5f8f9;
-        padding: 50px 0;
-      }
-      .content.mini {
-        padding-bottom: 0px;
-      }
-      .content.transparent {
-        background: none;
-      }
-      .nav {
-        letter-spacing: .1em;
-      }
-      .about {
-        text-align: left;
-        padding: 20px;
-        line-height: 1.5em;
-        font-size: 20px;
-        max-width: 700px;
-        margin: auto;
-      }
-      img {
-        width: 400px;
-        display: block;
-        margin: 0 auto 50px auto;
-      }
-      a {
-        color: #7bddcd;
-        font-size: 20px;
-        border-bottom: 1px dotted #7bddcd;
-        text-decoration: none;
-      }
-      a:hover {
-        background: rgba(123, 221, 205, 0.15);
-      }
+body {
+  text-align:center;
+  background: #f5f8f9;
+  margin: 0;
+  color: #524242;
+  font-family: 'Open Sans', sans-serif;
 
-      .mini img {
-        width: 200px;
-      }
+}
+h2 {
+  text-align: center;
+  margin-bottom: 13px;
+  margin-top: 0;
+  font-family: 'Courgette', cursive;
+  font-size: 2.2em;
+  color: #524242;
+}
+h3 {
+  font-size: 1em;
+  margin-top: 2.5em;
+}
+ol li {
+  margin-top: 1em;
+}
+a.small {
+  font-size: .8em;
+}
+a.bold {
+  font-weight: bold;
+}
+.content {
+  background: #f5f8f9;
+  padding: 50px 0;
+}
+.content.mini {
+  padding-bottom: 0px;
+}
+.content.transparent {
+  background: none;
+}
+.nav {
+  letter-spacing: .1em;
+}
+.about {
+  text-align: left;
+  padding: 20px;
+  line-height: 1.5em;
+  font-size: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+img {
+  width: 400px;
+  display: block;
+  margin: 0 auto 50px auto;
+}
+a {
+  color: #7bddcd;
+  font-size: 20px;
+  border-bottom: 1px dotted #7bddcd;
+  text-decoration: none;
+}
+a:hover {
+  background: rgba(123, 221, 205, 0.15);
+}
 
-      .full-width {
-        width: 100%;
-      }
+.mini img {
+  width: 200px;
+}
+
+.full-width {
+  width: 100%;
+}
