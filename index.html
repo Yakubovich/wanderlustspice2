@@ -16,6 +16,7 @@
       <h2>Wanderlust<br>Spice</h2>
       <img src="wanderlust_spice.png">
       <a href="about.html">about me</a>&nbsp;&nbsp;&nbsp;
+      <a href="japanese.html">japanese cooking</a>&nbsp;&nbsp;&nbsp;
       <!--<a href="balinese-cooking.html">balinese cooking</a>&nbsp;&nbsp;&nbsp;-->
       <a href="https://www.instagram.com/wanderlustspice">instagram</a>&nbsp;&nbsp;&nbsp;
     </div>
@@ -43,6 +44,41 @@
     </div>
     <!--End mc_embed_signup-->
     <div class="content">
+      <script>
+        window.onload = function() {
+          var svg = document.getElementById("map");
+          var svgContent = svg.contentDocument;
+          var cambodia = svgContent.getElementById("cambodia");
+          var countries = ['india', 'nepal', 'myanmar', 'thailand', 'laos', 'cambodia', 'vietnam', 'korea', 'japan', 'philippines', 'russia', 'malaysia', 'indonesia', 'china' ];
+
+
+          for (var i = 0; i < countries.length; i++) {
+            var countryElement = svgContent.getElementById(countries[i]);
+            console.log(i);
+            console.log(countryElement);
+            countryElement.addEventListener("mouseover", function() {
+              setColors(this, {fill: "#fffdd3", text: "#c8913f"});
+            });
+            countryElement.addEventListener("mouseout", function() {
+              setColors(this, {fill: "#ffc9ce", text: "#404040"});
+            });
+          }
+
+          function setColors(element, colors) {
+            element.style.cursor = "pointer";
+            for (var i = 0; i < element.children.length; i++) {
+              var child = element.children[i];
+              if (child.nodeName === "path")
+                child.style.fill = colors.fill;
+              else if (child.nodeName === "text")
+                child.style.fill = colors.text;
+            }
+          };
+        }
+      </script>
+      <object type="image/svg+xml" data="map.svg" class="map" id="map">
+        map
+      </object>
       <div class="about">
         <p>Welcome to Wanderlust Spice, where I write about my obsession with food and travel.  I grew up in a diaspora Vietnamese family in Canada.  My mother is a true master in the kitchen and my love for Vietnamese food fuelled my dreams of traveling to the home land to explore both my ancestry and the food of my people.  I have spent the past 7 years saving and planning to leave Toronto to travel through Asia to document the ways that food creates memories of culture, love, and family.  That it can elicit deep cravings only satisfied by one nuanced preparation of a common dish.  One of the main goals for my voyage is to explore the various patterns used in traditional home cooking, the secrets passed down from mother to daughter, the timeless way of cooking by feel and intuition rather than recipes. I want to compare my own traditional Vietnamese way of cooking to how each culture creates the unique flavour of their specific area, for example how the Japanese create Umami and the Indonesians create Bumbu.</p>
         <p>After leaving my job and apartment in Toronto, my boyfriend Ilya and I have been tackling Asia one country at a time.  Along our travels I sought out grandmas and locals who would invite me into their homes to pass down the kind of family recipes that invoke heart memories.  I have always found cooking to be the best way to engage with people.  Even if there is a language barrier, the time spent between chopping and mixing allows for a sharing of culture, history, and family anecdote.  Food is a universal language that inspires and captures the heart of local culture, and by sharing these moments with these people I am able to integrate aspects of their every day lives into my own.</p>

@@ -34,16 +34,16 @@ a.bold {
 }
 .content {
   background: #f5f8f9;
-  padding: 50px 0;
 }
-.content.mini {
-  padding-bottom: 0px;
+.content.mini h2 {
+  font-size: 4em;
 }
 .content.transparent {
   background: none;
 }
 .nav {
   background: linear-gradient(to bottom, #ffc9ce, #fffdd3);
+  padding: 60px 0;
 }
 .nav a {
   text-decoration: none;
@@ -61,10 +61,10 @@ a.bold {
 }
 .about {
   text-align: left;
-  padding: 20px;
+  padding: 0 50px;
   line-height: 1.5em;
   font-size: 20px;
-  max-width: 700px;
+  /*max-width: 700px;*/
   margin: auto;
 }
 img {
@@ -89,3 +89,33 @@ a:hover {
 .full-width {
   width: 100%;
 }
+
+.nav .logo-link, .nav .logo-link:hover {
+  background: none;
+}
+
+.map {
+  width: 50%;
+  float: left;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .map {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  .nav a {
+    width: 80%;
+    margin: auto;
+    display: block;
+  }
+
+  h2 {
+    font-size: 4em;
+  }
+}
+
